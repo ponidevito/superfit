@@ -1,0 +1,63 @@
+@use "./vars" as *;
+@use "./mixins" as *;
+
+.membership {
+  position: relative;
+  padding: 130px 0;
+  background-image: url("../img/membership/membership-bg.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  @include lg {
+    padding: 100px 0;
+  }
+  @include md {
+    padding: 70px 0;
+  }
+  @include xs {
+    padding: 30px 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+  }
+
+  &__body {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  &__content {
+    max-width: 850px;
+
+    padding: 40px;
+
+    background: rgba(0, 0, 0, 0.35);
+
+    backdrop-filter: blur(2px);
+    @include md {
+      padding: 10px;
+      max-width: 100%;
+    }
+  }
+
+  &__title {
+    font-size: 42px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    @include md {
+      font-size: 30px;
+    }
+     @include xs {
+      font-size: 24px;
+    }
+  }
+}
