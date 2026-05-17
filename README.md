@@ -4,7 +4,7 @@ Responsive fitness landing page built with HTML, SCSS, JavaScript and Gulp.
 
 <img width="1011" height="497" alt="image" src="https://github.com/user-attachments/assets/381fd0bd-8050-4e84-bfc7-8bd1c1c9b40f" />
 
-**Live Demo**: [ponidevito.github.io/xbox](https://ponidevito.github.io/superfit/)
+**Live Demo**: [ponidevito.github.io/superfit](https://ponidevito.github.io/superfit/)
 
 ## Technologies
 
